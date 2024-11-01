@@ -1,0 +1,6 @@
+on_fly_enable: '&afly enable' # default: '&afly enable'
+on_fly_disable: '&cfly disable' # default: '&cfly disable'
+DistanceMessage: true # default: true
+cooldown: 5000 # default: 20000, cooldown works with milliseconds
+maxDistance: 10000 # default: 10000
+minDistance: 1000 # default: 1000

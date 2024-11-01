@@ -1,0 +1,10 @@
+name: ArmorstandPlugin
+version: '1.0'
+main: me.pox.armorstandplugin.ArmorstandPlugin
+api-version: '1.20'
+author: [PoXel6]
+commands:
+  armor-stand2:
+    description: open a menu for armorstands
+    usage: /<command>
+    aliases: as

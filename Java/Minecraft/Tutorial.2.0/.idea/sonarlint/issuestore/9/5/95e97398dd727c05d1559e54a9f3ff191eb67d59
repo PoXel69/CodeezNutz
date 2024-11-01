@@ -1,0 +1,9 @@
+
+W
+java:S1854":Remove this useless assignment to local variable "player".(”Ÿşå8şÒ¡Òÿ1
+H
+java:S1481"+Remove this unused "player" local variable.(”Ÿşå8Ó¡Òÿ1
+]	java:S125"<This block of commented-out lines of code should be removed.(¾Î‰Áûÿÿÿÿ8‚Ó¡Òÿ1
+]	java:S125"<This block of commented-out lines of code should be removed.(¶¸¦¤úÿÿÿÿ8ŠÓ¡Òÿ1
+L
+java:S1068"*Remove this unused "plugin" private field.(õ¼Ù¥øÿÿÿÿ8ŠÓ¡Òÿ1

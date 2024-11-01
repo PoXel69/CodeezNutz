@@ -1,0 +1,9 @@
+name: PunishPlugin
+version: '1.0'
+main: me.conch.punishplugin.PunishPlugin
+api-version: '1.20'
+commands:
+  punishment:
+    description: punishes the player
+    usage: /<command>
+    aliases: pment

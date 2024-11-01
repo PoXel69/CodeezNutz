@@ -1,0 +1,5 @@
+name: JoinLeavePlugin
+version: '1.0-SNAPSHOT'
+main: me.pox.joinleaveplugin.JoinLeavePlugin
+api-version: '1.20'
+authors: [PoXel6]

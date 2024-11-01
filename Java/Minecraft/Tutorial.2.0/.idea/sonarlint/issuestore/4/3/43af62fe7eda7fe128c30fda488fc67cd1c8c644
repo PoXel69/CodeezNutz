@@ -1,0 +1,59 @@
+
+x
+java:S1066†"/Merge this if statement with the enclosing one.(ùØÎûÿÿÿÿ8—üÿÿ1J$6c51a210-93c8-4a88-88ed-4d1e759762ef
+‹
+java:S38242"HReplace this "Map.containsKey()" with a call to "Map.computeIfAbsent()".(æ8‚—üÿÿ1J$bad21265-1c3c-448b-be97-f1e473c4fc1d
+
+java:S1192"FDefine a constant instead of duplicating this literal "Added" 4 times.(™é®Êıÿÿÿÿ8ƒ—üÿÿ1J$b588ed16-bc48-46d3-9110-a79c78e632f1
+•
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 58 to the 15 allowed.(ÓñÂ™8ˆ—üÿÿ1J$16eba0b6-2913-4966-a647-4a4b7d3e9590
+ 	java:S1318"YComplete cases by adding the missing enum constants or add a default case to this switch.(ÈÃŞÄıÿÿÿÿ8–—üÿÿ1J$71b5a0eb-58f1-4358-9c42-ec6455b49afa
+“
+java:S1301`"KReplace this "switch" statement by "if" statements to increase readability.(ÈÃŞÄıÿÿÿÿ8™—üÿÿ1J$9f4b75d8-97bd-4743-83dc-dce2f57d7ab9
+ 	java:S131`"YComplete cases by adding the missing enum constants or add a default case to this switch.(ÈÃŞÄıÿÿÿÿ8™—üÿÿ1J$9d3f9f76-0d5c-4979-bafc-3bf82dace644
+“
+java:S1301i"KReplace this "switch" statement by "if" statements to increase readability.(ÈÃŞÄıÿÿÿÿ8š—üÿÿ1J$72bb0c02-6b30-47b8-b0d1-a0d56e359567
+ 	java:S131i"YComplete cases by adding the missing enum constants or add a default case to this switch.(ÈÃŞÄıÿÿÿÿ8š—üÿÿ1J$ad2f7550-c246-4930-8cfe-282bdcd0b170
+“
+java:S1301r"KReplace this "switch" statement by "if" statements to increase readability.(ÈÃŞÄıÿÿÿÿ8›—üÿÿ1J$78ddd133-0b50-4f2f-8048-29a3565b3d97
+ 	java:S131r"YComplete cases by adding the missing enum constants or add a default case to this switch.(ÈÃŞÄıÿÿÿÿ8›—üÿÿ1J$cd08c264-394e-498d-a350-8f2d52332547
+“
+java:S1301{"KReplace this "switch" statement by "if" statements to increase readability.(ÈÃŞÄıÿÿÿÿ8œ—üÿÿ1J$a0738c4b-b725-476a-912e-0b57dae698fe
+ 	java:S131{"YComplete cases by adding the missing enum constants or add a default case to this switch.(ÈÃŞÄıÿÿÿÿ8œ—üÿÿ1J$3c1f68aa-dccb-40b5-afcc-fcf3a28d033f
+¡	java:S131ˆ"YComplete cases by adding the missing enum constants or add a default case to this switch.(ÈÃŞÄıÿÿÿÿ8—üÿÿ1J$67880a5f-54e8-4a30-8a71-403044797802
+z
+java:S1874Š"1Remove this use of "getHelmet"; it is deprecated.(øäÅ¢üÿÿÿÿ8—üÿÿ1J$89e0420e-9d14-4cec-b92c-c21ab963b92a
+t
+java:S1874‹"1Remove this use of "setHelmet"; it is deprecated.(Ôş¶P8—üÿÿ1J$7f5b9af3-4436-4d1c-8234-14ad61a882c5
+u
+java:S1874"1Remove this use of "setHelmet"; it is deprecated.(•ıê8—üÿÿ1J$98d176ee-4d79-48a6-8edd-4fcfaca3d32e
+y
+java:S1874’"5Remove this use of "getChestplate"; it is deprecated.(š•µÀ8 —üÿÿ1J$65518403-0d78-4480-80ef-3aa696c57f9a
+y
+java:S1874“"5Remove this use of "setChestplate"; it is deprecated.(‡‚Æª8 —üÿÿ1J$c996fdbb-b647-4abe-8eab-26f3d5c8f137
+~
+java:S1874•"5Remove this use of "setChestplate"; it is deprecated.(ü‘åãûÿÿÿÿ8 —üÿÿ1J$98eae7d0-d9a5-4bc2-9055-8c6c87d4dd7e
+w
+java:S1874š"3Remove this use of "getLeggings"; it is deprecated.(ß­î¢8¡—üÿÿ1J$6a3eacfe-d721-404e-9216-a9584c69ab55
+|
+java:S1874›"3Remove this use of "setLeggings"; it is deprecated.(ÍèÄşÿÿÿÿ8¡—üÿÿ1J$04a1046a-f067-4de4-9118-fba40a8493ef
+w
+java:S1874"3Remove this use of "setLeggings"; it is deprecated.(Éá«Ö8¡—üÿÿ1J$01766dec-3c69-4a93-96a2-b432cdb3684c
+y
+java:S1874¢"0Remove this use of "getBoots"; it is deprecated.(ÒÄŒªıÿÿÿÿ8¡—üÿÿ1J$185a5569-1340-4c92-adbf-18f966713e9b
+t
+java:S1874£"0Remove this use of "setBoots"; it is deprecated.(†©‰8¢—üÿÿ1J$20b8f9ed-75a8-412f-8338-9c29349db8ca
+y
+java:S1874¥"0Remove this use of "setBoots"; it is deprecated.(¢˜€áûÿÿÿÿ8¢—üÿÿ1J$5340af08-7fb8-4e34-90e8-55213be5f2c7
+t
+java:S1874®"1Remove this use of "setHelmet"; it is deprecated.(Ôş¶P8¢—üÿÿ1J$8e0579cb-5079-4196-9c42-40209d9bea7a
+y
+java:S1874¯"5Remove this use of "setChestplate"; it is deprecated.(‡‚Æª8£—üÿÿ1J$0b7cad00-f1b7-40f8-8bb0-0f5607e89560
+|
+java:S1874°"3Remove this use of "setLeggings"; it is deprecated.(ÍèÄşÿÿÿÿ8£—üÿÿ1J$abac9ef4-0af1-440f-8304-384f50ddb9a3
+t
+java:S1874±"0Remove this use of "setBoots"; it is deprecated.(†©‰8£—üÿÿ1J$f19c2b8c-89b5-4c18-b873-b4381cfb0141
+r
+java:S1068"*Remove this unused "plugin" private field.(õ¼Ù¥øÿÿÿÿ8¤—üÿÿ1J$4392400c-b91c-4d00-a2fa-e2aa663b1d55
+Š
+java:S6541"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 154 to 64, Complexity from 39 to 14, Nesting Level from 4 to 2, Number of Variables from 10 to 6.(ÓñÂ™8¥—üÿÿ1J$84afd86a-130d-489c-9afd-50e8d45d1bdf

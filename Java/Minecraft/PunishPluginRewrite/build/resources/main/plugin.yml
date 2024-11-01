@@ -1,0 +1,9 @@
+name: PunishPlugin2.0
+version: '1.0-SNAPSHOT'
+main: PunishPlugin.PunishPlugin
+api-version: '1.21'
+commands:
+  punish:
+    description: open punishment menu
+    usage: /punish [username]
+    aliases: p

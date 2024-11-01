@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ArmorStandPlugin:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ArmorStandPlugin_jar</output-path>
+    <root id="archive" name="ArmorStandPlugin.jar">
+      <element id="module-output" name="ArmorStandPlugin" />
+      <element id="file-copy" path="$PROJECT_DIR$/pom.xml" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src" />
+    </root>
+  </artifact>
+</component>

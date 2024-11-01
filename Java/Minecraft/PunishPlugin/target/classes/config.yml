@@ -1,0 +1,11 @@
+#punishment:
+#  ban:
+#    type:           #
+#    name:           #
+#    duration:       #
+#    display_item:   # all caps
+#  mute:
+#    type:           #
+#    name:           #
+#    duration:       #
+#    display_item:   # all caps

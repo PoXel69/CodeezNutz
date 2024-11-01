@@ -1,0 +1,4 @@
+me\pox\vanishplugin\commands\VanishCommand.class
+me\pox\vanishplugin\VanishPlugin.class
+me\pox\vanishplugin\listeners\JoinEvent.class
+me\pox\vanishplugin\utils\VanishUtils.class

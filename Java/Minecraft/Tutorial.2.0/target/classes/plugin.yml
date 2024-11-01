@@ -1,0 +1,99 @@
+name: Tutorial.2.0
+version: '1.0-SNAPSHOT'
+main: me.pox.tutorial.Tutorial
+api-version: '1.20'
+commands:
+  god:
+    description: make player Invulnerable.
+    usage: /<command>
+    aliases: g
+    permission: Tutorial.2.0.god
+
+  feed:
+    description: maximize the player hunger level
+    usage: /<command>
+    aliases: food
+    permission: Tutorial.2.0.feed
+
+  heal:
+    description: maximize the player Health Point
+    usage: /<command>
+    aliases: h
+    permission: Tutorial.2.0.heal
+
+  vision:
+    description: gives player night vision
+    usage: /<command>
+    permission: Tutorial.2.0.vision
+    permission-message: u be lackin' lil bro
+
+  repeat:
+    description: dummy command
+    usage: /<command>
+  fmsg:
+    description: asdasdad
+    usage: /<command>
+
+  setspawn:
+    description: set the spawn point
+    usage: /<command>
+    aliases: sp
+
+  spawn:
+    description: teleport to the spawn
+    usage: /<command>
+    aliases: stp
+
+  fly:
+    description: toggles fly
+    usage: /<fly>
+    aliases: f
+    permission: tutorial.fly
+
+  weapon:
+    description: equip player with a weapon
+    usage: /<command>
+    permission: tutorial.weapon
+  menu:
+    description: menu for some basic stuff
+    usage: /<command>
+    aliases: m
+    permission: tutorial.menu
+
+  random-teleport:
+    description: Teleports player to a unknown territory
+    usage: /<command>
+    aliases: rtp
+
+  armorstand:
+    description: spawns a armor stand
+    usage: /<command>
+    aliases: rs
+
+  hologram:
+    description: spawns a hologram
+    usage: /<command>
+    aliases: holo
+
+  sign:
+    description: spawn a sign
+    usage: /<command>
+
+  tp:
+    description: A simple teleport Command
+    usage: /<command>
+
+  tpall:
+    description: Teleports all players to sender
+    usage: /<command>
+
+permissions:
+  tutorial.others:
+    default: op
+
+  Tutorial.2.0.god:
+    default: op
+    children:
+      tutorial.heal: true
+      tutorial.feed: true
+      tutorial.vision: true

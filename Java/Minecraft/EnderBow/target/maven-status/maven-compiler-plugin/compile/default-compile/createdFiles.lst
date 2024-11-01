@@ -1,0 +1,4 @@
+me\pox\enderbow\utilities\BowUtil.class
+me\pox\enderbow\listeners\TPBowListener.class
+me\pox\enderbow\commands\GiveCommand.class
+me\pox\enderbow\EnderBow.class

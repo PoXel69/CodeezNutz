@@ -1,0 +1,12 @@
+name: EnderBow
+version: '${project.version}'
+main: me.pox.enderbow.EnderBow
+api-version: '1.20'
+authors: [ PoXel6 ]
+description: Teleporting bow plugin
+commands:
+  enderbow:
+    description: gives player a magical bow!
+    usage: /<command>
+    aliases: eb
+    permission: tpbow.givebow

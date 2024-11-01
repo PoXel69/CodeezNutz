@@ -1,0 +1,10 @@
+
+
+java:S3516$"9Refactor this method to not always return the same value.(‘Ş·œøÿÿÿÿ8™Ÿ­®ÿ1J$75c78534-5075-4f5e-95f0-1fbd6a695cb2
+£	java:S116"aRename this field "list_of_flying_players" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎØ‚—8©Ÿ­®ÿ1J$a0c56e3b-2205-46ef-aded-6f20374f4ac2
+~
+java:S18746"6Remove this use of "fromLegacyText"; it is deprecated.(ÛÉŠùÿÿÿÿ8¹Ÿ­®ÿ1J$7b64e6c8-4478-480f-9a1d-273f49ae7ec7
+~
+java:S1874>"6Remove this use of "fromLegacyText"; it is deprecated.(ÛÉŠùÿÿÿÿ8Ã½¸®ÿ1J$468a8740-3d9f-496f-a2f8-527be0f4a57b
+~
+java:S1874C"6Remove this use of "fromLegacyText"; it is deprecated.(ÛÉŠùÿÿÿÿ8¸ƒ½€2J$78de76f9-8d93-4ede-8e6e-c8a3d8f38cb9

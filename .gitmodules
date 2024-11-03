@@ -1,0 +1,3 @@
+[submodule "Web-Dev/BDR"]
+	path = Web-Dev/BDR
+	url = https://github.com/PoXel6/BDR.git

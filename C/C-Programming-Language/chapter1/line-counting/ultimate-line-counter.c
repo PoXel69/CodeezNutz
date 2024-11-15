@@ -21,5 +21,5 @@ int main() {
       ++nw;
     }
   }
-  printf("%d,%d,%d\n", nl, nw, nc);
+  printf("nl: %d,nw: %d,nc: %d\n", nl, nw, nc);
 }

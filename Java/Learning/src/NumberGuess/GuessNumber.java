@@ -12,40 +12,42 @@ public class GuessNumber {
   public GuessNumber(int start, int end) {
     this.START = start;
     this.END = end;
-    gameLoop(start, end);
+    gameLoop();
   }
 
   public GuessNumber(int end) {
     this.START = 0;
     this.END = end;
-    gameLoop(START, end);
+    gameLoop();
   }
 
   public GuessNumber() {
-    gameLoop(0, 100);
+    gameLoop();
   }
 
-  public void gameLoop(int start, int end) {
-    Difficulty diff = new Difficulty();
-    boolean hasGuessed = false;
-    var gl = new GameLogic();
+  public void gameLoop() {
+    var diff = new Difficulty();
+    boolean hasGuessed;
     var guess = new Scanner(System.in);
     while (wantToPlay) {
       diff.diff();
-      var number = randomNumberGenerator(start, end);
+      var number = randomNumberGenerator();
       hasGuessed = false;
       while (!hasGuessed && diff.getMaxNumberOfTries() != 0) {
         try {
           System.out.println("Number of Tries left: " + diff.getMaxNumberOfTries());
           System.out.print("Guess a Number: ");
-          hasGuessed = gl.gameLogic(number, guess.nextInt());
+          hasGuessed = new GameLogic().gameLogic(number, guess.nextInt());
         } catch (InputMismatchException ime) {
           System.out.println("\nPlease Enter an Integer: ");
           guess.nextLine();
         }
+        diff.setMaxNumberOfTries(diff.getMaxNumberOfTries() - 1);
       }
-      diff.setMaxNumberOfTries(diff.getMaxNumberOfTries() - 1);
-      if (gameOver()) break;
+      if (gameOver()) {
+        System.err.println(("GG, Have a great time!"));
+        break;
+      }
     }
   }
 
@@ -58,7 +60,7 @@ public class GuessNumber {
     return pick != 1;
   }
 
-  private int randomNumberGenerator(int start, int end) {
-    return new Random().nextInt(end - start + 1) + start;
+  private int randomNumberGenerator() {
+    return new Random().nextInt(END - START + 1) + START;
   }
 }

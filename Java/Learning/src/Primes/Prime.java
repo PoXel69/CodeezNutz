@@ -1,3 +1,5 @@
+package Primes;
+
 import java.util.List;
 import java.util.stream.IntStream;
 
@@ -8,13 +10,13 @@ public class Prime {
   public Prime(int end) {
     this.end = end;
     start = 0;
-    primeFinder(IntStream.range(start, end).boxed().toList());
+    primeFinder(range(start, end));
   }
 
   public Prime(int start, int end) {
     this.start = start;
     this.end = end;
-    primeFinder(IntStream.range(start, end).boxed().toList());
+    primeFinder(range(start, end));
   }
 
   private static void primeFinder(List<Integer> number) {
@@ -31,5 +33,9 @@ public class Prime {
       }
     }
     return true;
+  }
+
+  List<Integer> range(int start, int end) {
+    return IntStream.range(start, end).boxed().toList();
   }
 }

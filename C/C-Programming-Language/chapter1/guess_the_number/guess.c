@@ -1,15 +1,36 @@
 #include <stdio.h>
+
+int isEqual(int guess, int number);
+int isBigger(int guess, int number);
+int isSmaller(int guess, int number);
+
 int main() {
   int guess, number;
   number = 6;
   while (scanf("%d", &guess) != EOF) {
-    if (guess == number) {
+    if (isEqual(guess, number)) {
       printf("You took the W\n");
       break;
-    } else if (guess > number) {
+    } else if (isBigger(guess, number)) {
       printf("you guessed too High!\nTry Again.\n");
-    } else if (guess < number) {
+    } else if (isSmaller(guess, number)) {
       printf("you guessed too Low!\nTry Again.\n");
     }
   }
+}
+int isEqual(int guess, int number) {
+  if (guess == number)
+    return 1;
+
+  return 0;
+}
+int isBigger(int guess, int number) {
+  if (guess > number)
+    return 1;
+  return 0;
+}
+int isSmaller(int guess, int number) {
+  if (guess < number)
+    return 1;
+  return 0;
 }

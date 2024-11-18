@@ -7,6 +7,8 @@ int isSmaller(int guess, int number);
 int main() {
   int guess, number;
   number = 6;
+  printf("Hello & Welcome\n");
+  printf("Please guess a number (hint: dont guess %i): ", number);
   while (scanf("%d", &guess) != EOF) {
     if (isEqual(guess, number)) {
       printf("You took the W\n");

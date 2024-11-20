@@ -1,0 +1,55 @@
+* {
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: sans-serif, "Jetbrains Mono Nerd Font";
+  line-height: 1.5;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+div {
+  text-align: center;
+  width: auto;
+  height: 40vh;
+}
+
+h1 {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+h2 {
+  padding: 1px 1rem;
+  margin: 1rem 0;
+}
+
+img {
+  width: 40vw;
+  height: auto;
+}
+
+ol li {
+  padding: 10px;
+}
+
+sub {
+  color: darkred;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0.2rem;
+  color: lightblue;
+}
+
+a:hover {
+  display: inline;
+  background: linear-gradient(to right, #e66465, #9198e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,5 +1,3 @@
-package NumberGuess;
-
 public class GameLogic {
 
   public boolean gameLogic(int number, int guess) {

@@ -1,64 +1,46 @@
+import enums.ErrorMessage;
+import events.NumberGuessEvent;
+import events.QuitEvent;
 import java.util.InputMismatchException;
-import java.util.Random;
-import java.util.Scanner;
+import utils.RandomNumberGenerator;
+import utils.ScannerSingleton;
 
 public class GuessNumber {
-  boolean wantToPlay = true;
-  private int START;
-  private int END;
+  private final int start;
+  private final int end;
 
   public GuessNumber(int start, int end) {
-    this.START = start;
-    this.END = end;
+    this.start = start;
+    this.end = end;
     gameLoop();
   }
 
   public GuessNumber(int end) {
-    this.START = 0;
-    this.END = end;
-    gameLoop();
-  }
-
-  public GuessNumber() {
+    this.start = 0;
+    this.end = end;
     gameLoop();
   }
 
   public void gameLoop() {
-    var diff = new Difficulty();
-    boolean hasGuessed;
-    var guess = new Scanner(System.in);
-    while (wantToPlay) {
-      diff.diff();
-      var number = randomNumberGenerator();
-      hasGuessed = false;
-      while (!hasGuessed && diff.getMaxNumberOfTries() != 0) {
+    var difficulty = new Difficulty();
+    var scanner = ScannerSingleton.getInstance();
+    do {
+      difficulty.diff();
+      var number = new RandomNumberGenerator().randomNumberGenerator(start, end);
+      boolean hasGuessed = false;
+      while (!hasGuessed) {
+        var numberOfTries = difficulty.getMaxNumberOfTries();
+        if (numberOfTries == 0) break;
         try {
-          System.out.println("Number of Tries left: " + diff.getMaxNumberOfTries());
+          System.out.println("Number of Tries left: " + numberOfTries);
           System.out.print("Guess a Number: ");
-          hasGuessed = new GameLogic().gameLogic(number, guess.nextInt());
+          hasGuessed = new NumberGuessEvent().event(number, scanner.nextInt());
         } catch (InputMismatchException ime) {
-          System.out.println("\nPlease Enter an Integer: ");
-          guess.nextLine();
+          System.out.println(ErrorMessage.INPUT_MISMATCH);
+          scanner.nextLine();
         }
-        diff.setMaxNumberOfTries(diff.getMaxNumberOfTries() - 1);
+        difficulty.setMaxNumberOfTries(numberOfTries - 1);
       }
-      if (gameOver()) {
-        System.err.println(("GG, Have a great time!"));
-        break;
-      }
-    }
-  }
-
-  boolean gameOver() {
-    System.out.println("Would you like to Play Again?");
-    System.out.println("1. To play again");
-    System.out.println("2. Quit");
-    System.out.println("Enter you Choice: ");
-    var pick = new Scanner(System.in).nextInt();
-    return pick != 1;
-  }
-
-  private int randomNumberGenerator() {
-    return new Random().nextInt(END - START + 1) + START;
+    } while (!new QuitEvent().event());
   }
 }

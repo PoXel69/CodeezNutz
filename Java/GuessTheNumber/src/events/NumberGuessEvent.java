@@ -1,14 +1,19 @@
-public class GameLogic {
+package events;
 
-  public boolean gameLogic(int number, int guess) {
+import enums.GuessEvaluation;
+
+public class NumberGuessEvent implements Event {
+
+  @Override
+  public boolean event(int number, int guess) {
     if (isEqual(number, guess)) {
-      System.out.println("YOU DONE IT!!!\nThe Number was: " + number);
+      System.out.println(GuessEvaluation.RIGHT_GUESS + "" + number);
       return true;
     } else if (isBigger(number, guess)) {
-      System.out.println("Close! But you Guessed Too Big!");
+      System.out.println(GuessEvaluation.HIGH_GUESS);
       return false;
     } else if (isSmaller(number, guess)) {
-      System.out.println("Close! But you Guessed Too Small!");
+      System.out.println(GuessEvaluation.LOW_GUESS);
       return false;
     }
     return false;

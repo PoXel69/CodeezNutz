@@ -1,20 +1,38 @@
 * {
-  background-color: black;
-  color: white;
   margin: 0;
+  padding: 0;
   font-family: sans-serif, "Jetbrains Mono Nerd Font";
-  line-height: 1.5;
 }
 
 body {
+  background-color: black;
+  color: white;
+  line-height: 1.5;
   width: 100vw;
   height: 100vh;
 }
 
 div {
   text-align: center;
-  width: auto;
-  height: 40vh;
+  margin: 6rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 90vw;
+  height: 90vh;
+}
+
+.lasagna-hero,
+.pasta-hero {
+  background-color: #222222;
+}
+
+.hero,
+.lasagna-hero,
+.pasta-hero {
+  margin: auto;
 }
 
 h1 {
@@ -27,13 +45,40 @@ h2 {
   margin: 1rem 0;
 }
 
-img {
+.lasagna-hero,
+.pasta-hero {
   width: 40vw;
-  height: auto;
 }
 
-ol li {
-  padding: 10px;
+img {
+  width: 40vw;
+  height: 40vw;
+  display: block;
+  margin: 0 auto;
+}
+
+ol img {
+  height: 400px;
+  width: 400px;
+}
+
+ol,
+ul,
+li {
+  padding: 2px;
+  margin: 10px;
+}
+
+ul,
+ol,
+li,
+h2,
+h1 {
+  text-align: start;
+}
+
+figcaption {
+  text-align: center;
 }
 
 sub {

@@ -1,12 +1,14 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int isEqual(int guess, int number);
 int isBigger(int guess, int number);
 int isSmaller(int guess, int number);
+int random_number_generator(int max);
 
 int main() {
-  int guess, number;
-  number = 6;
+  int guess;
+  int number = random_number_generator(100);
   printf("Hello & Welcome\n");
   printf("Please guess a number (hint: dont guess %i): ", number);
   while (scanf("%d", &guess) != EOF) {
@@ -20,6 +22,11 @@ int main() {
     }
   }
 }
+
+int random_number_generator(int max) {
+  return (random() / ((double)RAND_MAX + 1)) * 100;
+}
+
 int isEqual(int guess, int number) {
   if (guess == number)
     return 1;

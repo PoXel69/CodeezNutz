@@ -1,3 +1,6 @@
 [submodule "Web-Dev/BDR"]
 	path = Web-Dev/BDR
 	url = https://github.com/PoXel69/BDR.git
+[submodule "guess-the-number"]
+	path = guess-the-number
+	url = git@github:PoXel6/guess-the-number.git

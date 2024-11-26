@@ -9,22 +9,23 @@ public class Main {
 
   public static void main(String[] args) {
     boolean inUse = true;
+    greeting();
     var scan = new Scanner(System.in);
     while (inUse) {
-      greeting();
       var arg = scan.nextLine().split(" ");
       var cmd = arg[0];
 
       switch (cmd) {
         case "add" -> {
-          putInTracker(makeTask(joiner(arg, 1)));
+          addTaskToTracker(
+              new TaskBuilder().setDescription(toString(arg, 1)).setID(tracker.size() + 1).build());
           list();
         }
         case "ls", "list" -> list();
         case "update" -> {
           tracker.replace(
               isNumber(arg[1]) ? Integer.parseInt(arg[1]) : tracker.size(),
-              makeTask(joiner(arg, 2)));
+              new TaskBuilder().setDescription(toString(arg, 2)).setID(tracker.size() + 1).build());
           list();
         }
         case "delete", "remove", "rm" -> {
@@ -42,24 +43,24 @@ public class Main {
   }
 
   static void list() {
+    if (tracker.isEmpty()) {
+      System.out.println("There are no Task in your Tracker");
+      return;
+    }
     for (int i = 1; i < tracker.size() + 1; i++) {
       System.out.println(i + ". " + tracker.get(i));
     }
   }
 
-  static void putInTracker(Task task) {
+  static void addTaskToTracker(Task task) {
     tracker.put(task.getUniqueID(), task);
   }
 
-  static Task makeTask(String description) {
-    return new TaskBuilder().setDescription(description).setID(tracker.size() + 1).build();
-  }
-
-  static boolean isNumber(String str) {
+  public static boolean isNumber(String str) {
     return str.matches("-?\\d+(\\.\\d+)?");
   }
 
-  static String joiner(String[] arg, int startIndex) {
+  static String toString(String[] arg, int startIndex) {
     return String.join(" ", Arrays.copyOfRange(arg, startIndex, arg.length));
   }
 }

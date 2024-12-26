@@ -1,3 +1,3 @@
-package PunishPlugin.Menus;
+package PunishPlugin.Inventories;
 
 public class InventoryManager {}

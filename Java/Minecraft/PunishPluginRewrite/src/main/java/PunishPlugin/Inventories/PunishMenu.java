@@ -1,31 +1,25 @@
-package PunishPlugin.Menus.Inventories;
+package PunishPlugin.Inventories;
 
+import PunishPlugin.Emuns.PunishItems;
 import PunishPlugin.Helpers.HeadBuilder;
 import PunishPlugin.Helpers.InventoryBuilder;
 import PunishPlugin.Helpers.ItemBuilder;
 import java.util.List;
-import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
 public class PunishMenu {
-  private static Inventory punishGUI;
 
-  public static Inventory getPunishGUI() {
-    return punishGUI;
-  }
-
-  public static void openPunishMenu(Player player) {
-    punishGUI =
-        new InventoryBuilder().setPlayer(player).setSize(9).setTitle("&2&lPunishment Menu").build();
+  public static Inventory openPunishMenu(Player player) {
+    Inventory punishGUI = new InventoryBuilder().setSize(9).setTitle("&2&lPunishment Menu").build();
     ItemStack banItem =
-        new ItemBuilder(Material.WOODEN_AXE)
+        new ItemBuilder(PunishItems.BAN.getMaterial())
             .setName("&cBan")
             .setLore(List.of("Ban this Player"))
             .build();
     ItemStack muteItem =
-        new ItemBuilder(Material.NOTE_BLOCK)
+        new ItemBuilder(PunishItems.MUTE.getMaterial())
             .setName("&cMute")
             .setLore(List.of("Mute this Player"))
             .build();
@@ -35,6 +29,6 @@ public class PunishMenu {
     punishGUI.setItem(4, playerHead);
     punishGUI.setItem(7, muteItem);
     player.openInventory(punishGUI);
-    //    new PunishMenuManager().accessInventory(player, punishGUI);
+    return punishGUI;
   }
 }

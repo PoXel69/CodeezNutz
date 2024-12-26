@@ -1,6 +1,6 @@
 package PunishPlugin.Helpers;
 
-import PunishPlugin.Exceptions.PunishMessageBuilderExceptions;
+import PunishPlugin.Exceptions.PunishMessageBuilderException;
 import org.bukkit.ChatColor;
 
 public class PunishMessageBuilder {
@@ -13,7 +13,7 @@ public class PunishMessageBuilder {
 
   public PunishMessageBuilder setMode(String mode) {
     if (mode == null) {
-      this.mode = PunishMessageBuilderExceptions.modeIsNull;
+      this.mode = PunishMessageBuilderException.modeIsNull;
       return this;
     }
     this.mode = ChatColor.translateAlternateColorCodes('&', mode);
@@ -22,7 +22,7 @@ public class PunishMessageBuilder {
 
   public PunishMessageBuilder setExecutor(String executor) {
     if (executor == null) {
-      this.executor = PunishMessageBuilderExceptions.executorIsNull;
+      this.executor = PunishMessageBuilderException.executorIsNull;
       return this;
     }
     this.executor = ChatColor.translateAlternateColorCodes('&', executor);
@@ -31,7 +31,7 @@ public class PunishMessageBuilder {
 
   public PunishMessageBuilder setTarget(String target) {
     if (target == null) {
-      this.target = PunishMessageBuilderExceptions.targetIsNull;
+      this.target = PunishMessageBuilderException.targetIsNull;
       return this;
     }
     this.target = ChatColor.translateAlternateColorCodes('&', target);
@@ -40,7 +40,7 @@ public class PunishMessageBuilder {
 
   public PunishMessageBuilder setDuration(String duration) {
     if (duration == null) {
-      this.duration = PunishMessageBuilderExceptions.durationIsNull;
+      this.duration = PunishMessageBuilderException.durationIsNull;
       return this;
     }
     this.duration = ChatColor.translateAlternateColorCodes('&', duration);
@@ -49,7 +49,7 @@ public class PunishMessageBuilder {
 
   public PunishMessageBuilder setReason(String reason) {
     if (reason == null) {
-      this.reason = PunishMessageBuilderExceptions.reasonIsNull;
+      this.reason = PunishMessageBuilderException.reasonIsNull;
       return this;
     }
     this.reason = ChatColor.translateAlternateColorCodes('&', reason);
@@ -65,27 +65,16 @@ public class PunishMessageBuilder {
     String reasonLine = ChatColor.translateAlternateColorCodes('&', "&2&lReason: " + reason);
     return line
         + "\n"
-        + ""
         + modeLine
-        + ""
         + "\n"
-        + ""
         + executorLine
-        + ""
         + "\n"
-        + ""
         + targetLine
-        + ""
         + "\n"
-        + ""
         + durationLine
-        + ""
         + "\n"
-        + ""
         + reasonLine
-        + ""
         + "\n"
-        + ""
         + line;
   }
 }

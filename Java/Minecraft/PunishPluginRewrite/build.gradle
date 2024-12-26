@@ -23,7 +23,7 @@ dependencies {
 }
 
 jar {
-    destinationDirectory = file('/home/pox/Server/paper/plugins')
+    destinationDirectory = file('/mnt/d/server/plugins')
 }
 
 def targetJavaVersion = 21

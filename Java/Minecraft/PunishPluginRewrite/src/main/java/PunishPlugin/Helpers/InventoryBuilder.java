@@ -2,18 +2,11 @@ package PunishPlugin.Helpers;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 
 public class InventoryBuilder {
-  private Player player;
   private int size;
   private String title;
-
-  public InventoryBuilder setPlayer(Player player) {
-    this.player = player;
-    return this;
-  }
 
   public InventoryBuilder setSize(int size) {
     this.size = size;
@@ -31,8 +24,7 @@ public class InventoryBuilder {
   }
 
   public Inventory build() {
-    Inventory inventory =
-        Bukkit.createInventory(player, size, ChatColor.translateAlternateColorCodes('&', title));
-    return inventory;
+    return Bukkit.createInventory(
+        new MyHolder(), size, ChatColor.translateAlternateColorCodes('&', title));
   }
 }

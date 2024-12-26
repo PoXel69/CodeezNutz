@@ -1,6 +1,6 @@
 package PunishPlugin.Commands;
 
-import PunishPlugin.Menus.Inventories.PunishMenu;
+import PunishPlugin.Inventories.PunishMenu;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -18,6 +18,10 @@ public class PunishCommand implements CommandExecutor {
     return target;
   }
 
+  private void setTarget(String target) {
+    this.target = target;
+  }
+
   @Override
   public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
     if (sender instanceof Player) {
@@ -25,7 +29,8 @@ public class PunishCommand implements CommandExecutor {
       if (args.length == 0) {
         return false;
       }
-      target = args[0];
+      setTarget(args[0]);
+      player.sendMessage("args must be set by now, checking...\n" + getTarget());
       PunishMenu.openPunishMenu(player);
       player.sendMessage("reached end of command");
     }

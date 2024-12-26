@@ -1,0 +1,11 @@
+ext.pathMapper = [:]
+ext.pathMapper.put('C:/Program Files (x86)/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/plugins/Kotlin/lib/kotlin-gradle-tooling.jar', '/mnt/c/Program Files (x86)/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/plugins/Kotlin/lib/kotlin-gradle-tooling.jar')
+ext.pathMapper.put('C:/Program Files (x86)/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/plugins/gradle/lib/gradle-tooling-extension-api.jar', '/mnt/c/Program Files (x86)/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/plugins/gradle/lib/gradle-tooling-extension-api.jar')
+ext.pathMapper.put('C:/Program Files (x86)/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/lib/util-8.jar', '/mnt/c/Program Files (x86)/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/lib/util-8.jar')
+ext.pathMapper.put('C:/Program Files (x86)/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/lib/opentelemetry.jar', '/mnt/c/Program Files (x86)/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/lib/opentelemetry.jar')
+ext.pathMapper.put('C:/Program Files (x86)/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/lib/util_rt.jar', '/mnt/c/Program Files (x86)/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/lib/util_rt.jar')
+ext.pathMapper.put('C:/Program Files (x86)/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/plugins/gradle/lib/gradle-tooling-extension-impl.jar', '/mnt/c/Program Files (x86)/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/plugins/gradle/lib/gradle-tooling-extension-impl.jar')
+ext.pathMapper.put('C:/Program Files (x86)/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/lib/external-system-rt.jar', '/mnt/c/Program Files (x86)/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/lib/external-system-rt.jar')
+ext.pathMapper.put('C:/Program Files (x86)/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/plugins/gradle/lib/gradle-api-8.8.jar', '/mnt/c/Program Files (x86)/JetBrains/IntelliJ IDEA Community Edition 2024.2.3/plugins/gradle/lib/gradle-api-8.8.jar')
+ext.pathMapper.put("<<target java executable path>>", '/usr/lib/jvm/java-21-temurin/bin/java')
+ext.mapPath = { path -> pathMapper.get(path) ?: path }
